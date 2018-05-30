@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="Path that SVG!" title="Path that SVG!" src="logo.svg" width="450">
+  <img alt="Path that SVG!" title="Path that SVG!" src="https://cdn.rawgit.com/elrumordelaluz/path-that-svg/32de7c4d/logo.svg" width="450">
 </p>
 
 <p align="center">
