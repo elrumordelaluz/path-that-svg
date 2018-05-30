@@ -1,0 +1,9 @@
+<svg viewBox="0 0 500 200">
+	<rect x="203.7" y="50" fill="#F16362" stroke="#30456B" stroke-width="5.214" stroke-linecap="round" stroke-linejoin="round" width="100" height="100"/>
+	<circle fill="#F16362" stroke="#30456B" stroke-width="5.214" stroke-linecap="round" stroke-linejoin="round" cx="406.6" cy="100" r="50"/>
+	<polygon fill="#F16362" stroke="#30456B" stroke-width="5.214" stroke-linecap="round" stroke-linejoin="round" points="43.4,150 
+		93.6,52.2 152.2,150 	"/>
+	<polyline fill="none" stroke="#30456B" stroke-width="5.214" stroke-linecap="round" stroke-linejoin="round" points="124.6,52.2 
+		175.8,134.4 175.8,52.2 	"/>
+	<line fill="none" stroke="#30456B" stroke-width="5.214" stroke-linecap="round" stroke-linejoin="round" x1="331.7" y1="150" x2="331.7" y2="52.2"/>
+</svg>
