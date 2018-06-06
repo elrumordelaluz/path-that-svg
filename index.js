@@ -22,7 +22,7 @@ const elemToPath = node => {
   return o
 }
 
-module.exports = async (svg, { scale = 1 } = {}) => {
+export default async (svg, { scale = 1 } = {}) => {
   const input = Buffer.isBuffer(svg) ? svg.toString() : svg
   const parsed = await svgson(input)
   const convertedToPath = elemToPath(parsed)
