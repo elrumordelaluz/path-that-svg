@@ -33,7 +33,7 @@
     "conversion"
   ],
   "files": [
-    "index.js",
+    "dist",
     "README.md"
   ],
   "xo": {
