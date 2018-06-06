@@ -1,7 +1,6 @@
-const svgson = require('svgson-next').default
-const stringify = require('svgson-next').stringify
-const copy = require('fast-copy').default
-const toPath = require('element-to-path')
+import svgson, { stringify } from 'svgson-next'
+import copy from 'fast-copy'
+import toPath from 'element-to-path'
 
 const elemToPath = node => {
   let o = copy(node)
@@ -23,8 +22,9 @@ const elemToPath = node => {
   return o
 }
 
-module.exports = async svg => {
+module.exports = async (svg, { scale = 1 } = {}) => {
   const input = Buffer.isBuffer(svg) ? svg.toString() : svg
   const parsed = await svgson(input)
-  return stringify(elemToPath(parsed))
+  const convertedToPath = elemToPath(parsed)
+  return stringify(convertedToPath)
 }

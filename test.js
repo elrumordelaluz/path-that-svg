@@ -1,7 +1,7 @@
 import fs from 'fs'
 import { promisify } from 'util'
 import test from 'ava'
-import svgToPath from './'
+import svgToPath from './dist/pathThatSvg.cjs'
 const readFileAsync = promisify(fs.readFile)
 
 test('Path that SVG!', async t => {
