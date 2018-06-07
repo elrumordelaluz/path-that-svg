@@ -1,6 +1,4 @@
 import svgson, { stringify } from 'svgson-next'
-// import copy from 'fast-copy'
-// import clone from 'lodash.clonedeep'
 import toPath from 'element-to-path'
 
 const elemToPath = node => {
