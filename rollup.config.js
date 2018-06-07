@@ -5,7 +5,7 @@ import pkg from './package.json'
 
 export default [
   {
-    input: 'index.js',
+    input: 'index-umd.js',
     output: {
       file: pkg.browser,
       format: 'umd',
@@ -20,7 +20,7 @@ export default [
     ],
   },
   {
-    input: 'index.js',
+    input: 'index-es.js',
     external: ['fast-copy', 'element-to-path', 'svgson-next'],
     plugins: [
       babel({

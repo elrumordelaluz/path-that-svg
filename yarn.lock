@@ -927,9 +927,9 @@ duplexer3@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/duplexer3/-/duplexer3-0.1.4.tgz#ee01dd1cac0ed3cbc7fdbea37dc0a8f1ce002ce2"
 
-element-to-path@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/element-to-path/-/element-to-path-1.0.0.tgz#b7173f08e1a69e4baefd3e5e0c182cd5cfc54d82"
+element-to-path@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/element-to-path/-/element-to-path-1.2.0.tgz#5091c7961447917779c9742d602b0aceca8df17f"
 
 empower-core@^0.6.1:
   version "0.6.2"
@@ -1024,10 +1024,6 @@ extglob@^0.3.1:
   resolved "https://registry.yarnpkg.com/extglob/-/extglob-0.3.2.tgz#2e18ff3d2f49ab2765cec9023f011daa8d8349a1"
   dependencies:
     is-extglob "^1.0.0"
-
-fast-copy@1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/fast-copy/-/fast-copy-1.2.1.tgz#9c86564bd592210f35893a779088916b2af4629f"
 
 fast-diff@^1.1.1:
   version "1.1.2"
@@ -2352,9 +2348,9 @@ rollup-pluginutils@^2.0.1:
     estree-walker "^0.5.2"
     micromatch "^2.3.11"
 
-rollup@0.60.0:
-  version "0.60.0"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.60.0.tgz#2c4acaaf3d8a858a81ff740d6253e21eeb58ff21"
+rollup@0.60.1:
+  version "0.60.1"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.60.1.tgz#07cb66153f1541d5f7e82b8393b405c31647dae9"
   dependencies:
     "@types/estree" "0.0.39"
     "@types/node" "*"
@@ -2565,9 +2561,9 @@ supports-color@^5.0.0, supports-color@^5.3.0:
   dependencies:
     has-flag "^3.0.0"
 
-svgson-next@4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/svgson-next/-/svgson-next-4.0.0.tgz#a972469747740ac361768964138654f565db2624"
+svgson-next@4.1.2:
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/svgson-next/-/svgson-next-4.1.2.tgz#12677830cd7f4da83b4b5edcbe464f030e1ae4a8"
   dependencies:
     clean-deep "3.0.2"
     deep-rename-keys "^0.2.1"

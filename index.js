@@ -1,9 +1,10 @@
 import svgson, { stringify } from 'svgson-next'
-import copy from 'fast-copy'
+// import copy from 'fast-copy'
+// import clone from 'lodash.clonedeep'
 import toPath from 'element-to-path'
 
 const elemToPath = node => {
-  let o = copy(node)
+  let o = Object.assign({}, node)
 
   if (/(rect|circle|ellipse|polygon|polyline|line|path)/.test(o.name)) {
     o.attributes = Object.assign({}, o.attributes, {
@@ -23,8 +24,7 @@ const elemToPath = node => {
 }
 
 export default async svg => {
-  const input = Buffer.isBuffer(svg) ? svg.toString() : svg
-  const parsed = await svgson(input)
+  const parsed = await svgson(svg)
   const convertedToPath = elemToPath(parsed)
   return stringify(convertedToPath)
 }
