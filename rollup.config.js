@@ -21,7 +21,7 @@ export default [
   },
   {
     input: 'index-es.js',
-    external: ['fast-copy', 'element-to-path', 'svgson-next'],
+    external: ['fast-copy', 'element-to-path', 'svgson'],
     plugins: [
       babel({
         exclude: ['node_modules/**'],

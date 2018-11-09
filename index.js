@@ -1,4 +1,4 @@
-import svgson, { stringify } from 'svgson-next'
+import svgson, { stringify } from 'svgson'
 import toPath from 'element-to-path'
 
 const elemToPath = node => {
