@@ -9,7 +9,8 @@ const elemToPath = node => {
       d: toPath(o),
     })
     for (const attr in o.attributes) {
-      if (!/fill|stroke|opacity|d/.test(attr)) {
+      // Remove geometry properties not used
+      if (/x|y|x1|y1|x2|y2|points|width|height|cx|cy|rx|ry|r/.test(attr)) {
         delete o.attributes[attr]
       }
     }

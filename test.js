@@ -2,22 +2,32 @@ import fs from 'fs'
 import { promisify } from 'util'
 import test from 'ava'
 import svgToPath from './dist/pathThatSvg.cjs'
+import parse from 'svgson'
 const readFileAsync = promisify(fs.readFile)
 
-test('Path that SVG!', async t => {
+test('Converts element into paths', async t => {
   const input = await readFileAsync('./test.svg')
-  const expected = await readFileAsync('./converted.svg')
   const converted = await svgToPath(input)
-  t.is(converted, expected.toString())
+  const parsed = await parse(converted)
+  parsed.children.forEach(child => t.is(child.name, 'path'))
 })
 
-test.cb('Path that SVG2!', t => {
-  fs.readFile('./test.svg', (err, input) => {
-    fs.readFile('./converted.svg', (err, expected) => {
-      svgToPath(input).then(converted => {
-        t.is(converted, expected.toString())
-        t.end()
-      })
+const testAttrs = ['class', 'id', 'data-test']
+
+test('Converts element into paths', async t => {
+  const input = await readFileAsync('./test.svg')
+  const converted = await svgToPath(input)
+  const inputParsed = await parse(input.toString())
+  const convertedParsed = await parse(converted)
+
+  inputParsed.children.forEach((child, index) => {
+    testAttrs.forEach(attr => {
+      if (child.attributes[attr]) {
+        t.is(
+          child.attributes[attr],
+          convertedParsed.children[index].attributes[attr]
+        )
+      }
     })
   })
 })
