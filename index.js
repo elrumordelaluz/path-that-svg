@@ -1,6 +1,8 @@
 import svgson, { stringify } from 'svgson'
 import toPath from 'element-to-path'
 
+const attrsRegex = /\b(?:x|y|x1|y1|x2|y2|points|width|height|cx|cy|rx|ry|r)\b/gi
+
 const elemToPath = node => {
   let o = Object.assign({}, node)
 
@@ -10,7 +12,7 @@ const elemToPath = node => {
     })
     for (const attr in o.attributes) {
       // Remove geometry properties not used
-      if (/x|y|x1|y1|x2|y2|points|width|height|cx|cy|rx|ry|r/.test(attr)) {
+      if (attrsRegex.test(attr)) {
         delete o.attributes[attr]
       }
     }

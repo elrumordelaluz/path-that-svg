@@ -12,9 +12,9 @@ test('Converts element into paths', async t => {
   parsed.children.forEach(child => t.is(child.name, 'path'))
 })
 
-const testAttrs = ['class', 'id', 'data-test']
+const testAttrs = ['class', 'id', 'data-test', 'transform']
 
-test('Converts element into paths', async t => {
+test('Mantain attributes', async t => {
   const input = await readFileAsync('./test.svg')
   const converted = await svgToPath(input)
   const inputParsed = await parse(input.toString())

@@ -1,5 +1,5 @@
 <svg viewBox="0 0 500 200">
-	<rect class="rectangle red" x="203.7" y="50" fill="#F16362" stroke="#30456B" stroke-width="5.214" stroke-linecap="round" stroke-linejoin="round" width="100" height="100"/>
+	<rect transform="translate(9 9)" class="rectangle red" x="203.7" y="50" fill="#F16362" stroke="#30456B" stroke-width="5.214" stroke-linecap="round" stroke-linejoin="round" width="100" height="100"/>
 	<circle id="my-circle" fill="#F16362" stroke="#30456B" stroke-width="5.214" stroke-linecap="round" stroke-linejoin="round" cx="406.6" cy="100" r="50"/>
 	<polygon data-test="polygon-test" fill="#F16362" stroke="#30456B" stroke-width="5.214" stroke-linecap="round" stroke-linejoin="round" points="43.4,150 
 		93.6,52.2 152.2,150 	"/>
