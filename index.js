@@ -11,7 +11,6 @@ const elemToPath = node => {
     for (const attr in o.attributes) {
       // Remove geometry properties not used
       if (/^(x|y|x1|y1|x2|y2|points|width|height|cx|cy|rx|ry|r)$/.test(attr)) {
-        console.log({ attr })
         delete o.attributes[attr]
       }
     }
