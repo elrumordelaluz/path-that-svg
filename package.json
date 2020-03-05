@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "element-to-path": "1.2.0",
-    "svgson": "3.0.0"
+    "svgson": "^4.0.0"
   },
   "scripts": {
     "prepare": "npm run build",
