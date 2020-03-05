@@ -8,12 +8,13 @@
   "author": "Lionel T <elrumordelaluz@hotmail.com> (https://elrumordelaluz.com/)",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "7.1.5",
-    "ava": "0.25.0",
-    "rollup": "0.67.1",
-    "rollup-plugin-babel": "4.0.3",
-    "rollup-plugin-commonjs": "9.2.0",
-    "rollup-plugin-node-resolve": "3.4.0"
+    "@ava/babel": "^1.0.1",
+    "@babel/core": "^7.8.7",
+    "ava": "^3.5.0",
+    "rollup": "^1.32.0",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
   },
   "dependencies": {
     "element-to-path": "1.2.0",
@@ -38,5 +39,8 @@
   ],
   "xo": {
     "esnext": true
+  },
+  "ava": {
+    "babel": true
   }
 }
