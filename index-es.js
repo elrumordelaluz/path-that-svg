@@ -1,6 +1,9 @@
 import pathThatSvg from './index'
 
-export default async input => {
+async function pts(input) {
   const svg = Buffer.isBuffer(input) ? input.toString() : input
   return await pathThatSvg(svg)
 }
+export default pts
+
+export { pts as pathThatSvg }

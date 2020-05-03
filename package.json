@@ -9,16 +9,16 @@
   "license": "MIT",
   "devDependencies": {
     "@ava/babel": "^1.0.1",
-    "@babel/core": "^7.8.7",
-    "ava": "^3.5.0",
-    "rollup": "^1.32.0",
-    "rollup-plugin-babel": "^4.3.3",
+    "@babel/core": "^7.9.6",
+    "@rollup/plugin-babel": "^5.0.0",
+    "ava": "^3.8.1",
+    "rollup": "^2.7.6",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0"
   },
   "dependencies": {
     "element-to-path": "1.2.0",
-    "svgson": "^4.0.0"
+    "svgson": "^4.1.0"
   },
   "scripts": {
     "prepare": "npm run build",
