@@ -1,6 +1,6 @@
 {
   "name": "path-that-svg",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "main": "dist/pathThatSvg.cjs.js",
   "module": "dist/pathThatSvg.esm.js",
   "browser": "dist/pathThatSvg.umd.js",
