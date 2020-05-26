@@ -19,15 +19,15 @@ yarn add path-that-svg
 `String|Buffer` svg
 
 ```js
-const svgToPath = require('path-that-svg')
+const { pathThatSvg } = require('path-that-svg')
 
 fs.readFile('./elements.svg', (err, input) => {
-  svgToPath(input).then(convertedFromBuffer => {
+  pathThatSvg(input).then((convertedFromBuffer) => {
     console.log({ convertedFromBuffer })
   })
 })
 
-svgToPath(`<svg viewBox="0 0 500 200">
+pathThatSvg(`<svg viewBox="0 0 500 200">
   <rect 
     x="200" 
     y="50" 
@@ -37,7 +37,9 @@ svgToPath(`<svg viewBox="0 0 500 200">
     stroke-linecap="round" 
     stroke-linejoin="round" 
     width="100" height="100"/>
-</svg>`).then(convertedFromString => console.log({ convertedFromString }))
+</svg>`).then((convertedFromString) => {
+  console.log(convertedFromString)
+})
 ```
 
 ## Related
